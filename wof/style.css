@@ -19,3 +19,21 @@ footer a{
     text-decoration: none;
     margin: 0 2%;
 }
+
+.made-by{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e0e0e;
+    color: rgb(180, 180, 180)
+}
+
+.made-by a{
+    color: #fff;
+    text-decoration: none
+}
+
+.made-by a:hover{
+    color: rgb(165, 165, 224);
+    transition: 300ms
+}

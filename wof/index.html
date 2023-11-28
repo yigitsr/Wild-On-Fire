@@ -15,8 +15,8 @@
   html{
     scroll-behavior: smooth;
   }
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+  body {font-family: "Lato", sans-serif}
+  .mySlides {display: none}
 </style>
 
 
@@ -270,6 +270,9 @@ body {font-family: "Lato", sans-serif}
   </div>
         
   </footer>
+  
+  <div id="madeById" class="made-by"></div>
+
 
 <script>
 // Automatic Slideshow - change image every 3 seconds
@@ -305,7 +308,22 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function renderMadeBy(){
+  return `
+        <!-- Made by -->
+          <p>Made with ❤ by <a href="https://yigitsereflioglu.dev" target="_blank"> Yigit S</a></p>
+  `;
+}
+
+function load(){
+      document.getElementById('madeById').innerHTML = renderMadeBy();
+}
+
+load();
+
 </script>
+
 
 </body>
 </html>
